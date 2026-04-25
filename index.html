@@ -1,42 +1,38 @@
 <!DOCTYPE html>
-<html lang="ar">
-<head>
+<html lang="en"> <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Endangered Species</title>
+  <title>Save the Animals</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  <div class="overlay">
-    <div class="container">
+  <div class="main-wrapper">
+    <div class="content-box">
 
-      <h1>Endangered Species 🌍</h1>
-      <p class="subtitle">Animals that are at risk of extinction and need our protection.</p>
+      <h1 id="main-title">Endangered Species 🌍</h1>
+      <p class="intro-text">Animals that are at risk of extinction and need our protection.</p>
 
-      <h2>Featured Animals</h2>
+      <hr style="width: 50%; opacity: 0.3;"> <h2 class="section-title">Featured Animals</h2>
 
-      <div class="card">
+      <div class="animal-card" onclick="showAlert('Panda')">
         <h3>Panda 🐼</h3>
         <p>Pandas are endangered due to habitat loss and low reproduction rates.</p>
       </div>
 
-      <div class="card">
-        <h3>Koala 🐨</h3>
+      <div class="animal-card" onclick="showAlert('Koala')">
+        <h3>Koala Boxes 🐨</h3>
         <p>Koalas are affected by deforestation and climate change.</p>
       </div>
 
-      <div class="card">
+      <div class="animal-card" onclick="showAlert('Elephant')">
         <h3>Elephant 🐘</h3>
         <p>Elephants are threatened by poaching and habitat destruction.</p>
       </div>
 
-    </div>
+      <div id="message-area"></div> </div>
   </div>
 
-</body>
-</html>
-
+  <script src="script.js"></script>
 </body>
 </html>
